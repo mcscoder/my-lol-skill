@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('assets/facebook_profile_image.png');
+    height: 100%;
+}
+
+/* Second image (Lee Sin) */
+.bgimg-2 {
+    background-image: url("assets/leesin-bg.png");
+    padding-bottom: 150px;
+}
+
+/* Third image (Yasuo) */
+.bgimg-3 {
+    background-image: url("assets/yasuo-bg.jpg");
+    padding-bottom: 150px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+.margin-left-5pc {
+    margin-left: 5%;
+}
+
+.padding-left-5pc {
+    padding-left: calc(5% + 1rem) !important;
+}
+
+.my-picture-container img {
+    height: 60vh;
+    object-fit: contain;
+    background-color: black;
+}
+
+.skills-stat {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-stat div {
+    padding: 1rem 0;
+}
+
+.margin-bottom-1rem {
+    margin-bottom: 1rem;
+}
+
+.skills-stat-describe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.describe-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.champ-name {
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+.describe-container .box {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.champ-pic {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 4rem;
+}
+
+.hight-light-video {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.leesin-highlight-container video {
+    object-fit: contain;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .champ-pic {
+        margin-right: 1.3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .champ-name {
+        font-size: 0.7rem;
+    }
+
+    .skills-stat div {
+        padding: 0.3rem 0;
+        font-size: 0.6rem;
+    }
+
+    .skills-stat-describe {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .describe-container {
+        margin-bottom: 0.5rem;
+    }
+
+    .describe-container .box {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .hight-light-video {
+        width: 100%;
+    }
+
+    /* Second image (Lee Sin) */
+    .bgimg-2 {
+        background-image: url("assets/leesin-bg.png");
+        padding-bottom: 90px;
+    }
+
+    /* Third image (Yasuo) */
+    .bgimg-3 {
+        background-image: url("assets/yasuo-bg.jpg");
+        padding-bottom: 90px;
+    }
+}
